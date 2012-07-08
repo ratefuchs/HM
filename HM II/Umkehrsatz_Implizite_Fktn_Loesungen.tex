@@ -1,0 +1,17 @@
+\documentclass{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\begin{document}
+\section*{Aufgabe 1}
+
+$H_f(x,y)=\begin{pmatrix}e^{x+y}&e^{x+y}\\2x&0\end{pmatrix},\det H_f(x,y)=-2xe^{x+y}\Rightarrow$ f\"ur $x\neq 0$ ist
+die Determinante nicht 0 und $H_f(x,y)$ damit invertierbar. Zus\"atzlich ist $f\in C^1(D,\mathbb{R}^2)$. Nach dem Umkehrsatz folgt
+daraus, dass die Umkehrfunktion von f (lokal) existiert. Au\ss{}erdem liefert der Satz:\\
+$(f^{-1})^\prime(f(1,0))=(f^\prime(1,0))^{-1}=\begin{pmatrix}e&e\\2&0\end{pmatrix}^{-1}=
+\begin{pmatrix}0&\frac 1 2\\\frac 1 e&-\frac  1 2\end{pmatrix}$.\\
+f ist auf D nicht injektiv, da z.B. $f(1,0)=f(-1,2)=(e,1)$.
+\end{document}

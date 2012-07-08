@@ -1,0 +1,31 @@
+\documentclass{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\begin{document}
+\section*{Aufgabe 1}
+Lösungsskizze (Zwischenergebnisse):\\
+Das charakteristische Polynom ist $(\lambda-4)^2(\lambda-i)(\lambda+i)\Rightarrow \lambda_{1,2}=4, \lambda_3=i, \lambda_4=-i=\bar{i}$.\\
+$\text{Kern}(A-4I)=\left[\begin{pmatrix}1\\-1\\0\\0\end{pmatrix}\right]$\\
+$\text{Kern}((A-4I)^2)=\left[\begin{pmatrix}1\\0\\0\\0\end{pmatrix},\begin{pmatrix}0\\1\\0\\0\end{pmatrix}\right]$\\
+$\text{Kern}(A-i\cdot I)=\left[\begin{pmatrix}0\\0\\1+i\\-1\end{pmatrix}\right]$\\
+Als (ein mögliches) Fundamentalsystem ergibt sich
+$$\left\lbrace e^{4x}\begin{pmatrix}1\\-1\\0\\0\end{pmatrix}, e^{4x}\begin{pmatrix}1-x\\x\\0\\0\end{pmatrix},
+\begin{pmatrix}0\\0\\ \cos x-\sin x\\-\cos x\end{pmatrix},
+\begin{pmatrix}0\\0\\ \cos x+\sin x\\-\sin x\end{pmatrix}\right\rbrace$$
+
+\section*{Aufgabe 2}
+Lösungsskizze (Zwischenergebnisse):\\
+(a) $A$ ist schon in Jordan-Normalform. Damit lässt sich das Fundamentalsystem direkt ablesen als
+$$\left\lbrace e^{2x}\begin{pmatrix}1\\x\\0\end{pmatrix}, e^{2x}\begin{pmatrix}0\\1\\0\end{pmatrix},
+e^{-x}\begin{pmatrix}0\\0\\ 1\end{pmatrix}\right\rbrace$$
+Inhomogene Gleichung:\\
+$c^\prime(x)=(Y(x))^{-1}\cdot b(x)  =\begin{pmatrix}1\\-x\\ (1+x)e^x\end{pmatrix}\\
+\Rightarrow c(x)= \begin{pmatrix}x\\-\frac{1}{2}x^2\\ xe^x\end{pmatrix}
+\Rightarrow y_p(x)=Y(x)\cdot c(x)=\begin{pmatrix}xe^{2x}\\\frac{1}{2}x^2e^{2x}\\ x\end{pmatrix}$.\\
+Als allgemeine Lösung ergibt sich $$c_1e^{2x}\begin{pmatrix}1\\x\\0\end{pmatrix}+c_2e^{2x}\begin{pmatrix}0\\1\\0\end{pmatrix} + c_3e^{-x} \begin{pmatrix}0\\0\\ 1\end{pmatrix}+\begin{pmatrix}xe^{2x}\\\frac{1}{2}x^2e^{2x}\\ x\end{pmatrix}\quad (c_1,c_2,c_3\in\mathbb{R})$$\newline
+(b) Es ergibt sich $c_1=1, c_2=0, c_3=2$.
+\end{document}

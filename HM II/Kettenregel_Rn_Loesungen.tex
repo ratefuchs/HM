@@ -1,0 +1,32 @@
+\documentclass{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\begin{document}
+\section*{Aufgabe 1}
+
+Hier nur die Zwischenergebnisse:\\
+(a) $(g\circ f)(x,y,z)=xy+y^2+2xz+2yz\\
+f^\prime (x,y,z)=\begin{pmatrix}1&1&0\\0&1&2\end{pmatrix}, g^\prime(t,u)=(u,t)\\
+g^\prime (f(x,y,z))=(y+2z,x+y), (g\circ f)^\prime(x,y,z)=(y+2z,x+2y+2z,2x+2y)\\$
+(b) $(g\circ f)(x,y,z)=(y+x+z+xyz,xyz^3)\\
+f^\prime (x,y,z)=\begin{pmatrix}0&1&0\\1&0&1\\0&0&2z\\yz&xz&xy\end{pmatrix},
+g^\prime(x,y,z,w)=\begin{pmatrix}1&1&0&1\\0&0&w&z\end{pmatrix}\\
+g^\prime (f(x,y,z))=\begin{pmatrix}1&1&0&1\\0&0&xyz&z^2\end{pmatrix},
+(g\circ f)^\prime(x,y,z)=\begin{pmatrix}1+yz&1+xz&1+xy\\yz^3&xz^3&3xyz^2\end{pmatrix}\\$
+(c) $(g\circ f)(x,y,z)=(e^x,e^{2x}z\sin y,\sin e^x,\log(z\sin y)+e^x)\\
+f^\prime (x,y,z)=\begin{pmatrix}e^x&0&0\\0&z\cos y&\sin y\end{pmatrix},
+g^\prime(t,u)=\begin{pmatrix}1&0\\2tu&t^2\\\cos t&0\\1&\frac 1 u\end{pmatrix}\\
+g^\prime (f(x,y,z))=\begin{pmatrix}1&0\\2ze^x\sin y&e^{2x}\\\cos e^x&0\\1&\frac 1 {z\sin y}\end{pmatrix},
+(g\circ f)^\prime(x,y,z)=\begin{pmatrix}e^x&0&0\\2ze^{2x}\sin y&ze^{2x}\cos y&e^{2x}\sin y\\
+e^x\cos e^x&0&0\\e^x&\frac{\cos y}{\sin y}&\frac 1 z\end{pmatrix}\\$
+(d) $(g\circ f)(x,y)=(2xy^2,\sin xy^2)\\
+f^\prime (x,y)=(y^2,2xy), g^\prime(t)=\begin{pmatrix}2\\\cos t\end{pmatrix}\\
+g^\prime (f(x,y))=\begin{pmatrix}2\\\cos xy^2\end{pmatrix},
+(g\circ f)^\prime(x,y)=\begin{pmatrix}2y^2&4xy\\x^2\cos xy^2&2xy\cos xy^2\end{pmatrix}\\$
+(e) $(f\circ g)(t)=2t\sin^2 t\\
+f^\prime (g(t))=(\sin^2 t,4t\sin t), (f\circ g)^\prime(t)=2\sin^2 t+4t\sin t\cos t\\$
+\end{document}
