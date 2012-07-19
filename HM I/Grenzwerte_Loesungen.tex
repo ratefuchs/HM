@@ -1,18 +1,18 @@
 \documentclass{scrartcl}
 \usepackage[T1]{fontenc}
-\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 
 \begin{document}
 \section*{Aufgabe 1}
-(a) f ist stetig differenzierbar und $f^\prime(0)=0$. Also ist f auf einem Intervall $[0,\epsilon)$ 
+(a) f ist stetig differenzierbar und $f^\prime(0)>0$. Also ist f auf einem Intervall $[0,\epsilon)$ 
 von 0 streng monoton wachsend, daher ist f(x)>0 ($0<x<\epsilon$).\\
 Fall 1: f(2) > 4. Dann ist $f(x+2)-4$ in einer Umgebung von 0 positiv. Der Nenner des Bruchs geht gegen 0 (wobei er positiv ist) 
-und der Zähler bleibt größer 0. Damit ist $\lim\limits_{x\rightarrow0^+}\frac{f(x+2)-4}{f(x)}=\infty$.\\
+und der ZÃ¤hler bleibt grÃ¶ÃŸer 0. Damit ist $\lim\limits_{x\rightarrow0^+}\frac{f(x+2)-4}{f(x)}=\infty$.\\
 Fall 2: f(2) < 4. Dann ist $f(x+2)-4$ in einer Umgebung von 0 negativ. Der Nenner des Bruchs geht gegen 0 (wobei er positiv ist) 
-und der Zähler bleibt kleiner 0. Damit ist $\lim\limits_{x\rightarrow0^+}\frac{f(x+2)-4}{f(x)}=-\infty$.\\
+und der ZÃ¤hler bleibt kleiner 0. Damit ist $\lim\limits_{x\rightarrow0^+}\frac{f(x+2)-4}{f(x)}=-\infty$.\\
 Fall 3: f(2) = 4. Dann liefert l'Hospital:
 \[\lim\limits_{x\rightarrow0^+}\frac{f(x+2)-4}{f(x)}\stackrel{[\frac 0 0]}{=}
 \lim\limits_{x\rightarrow0^+}\frac{f^\prime(x+2)}{f^\prime(x)}=\frac 3 3=1\].\\
